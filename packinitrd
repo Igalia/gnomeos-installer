@@ -1,0 +1,6 @@
+#/bin/sh
+
+cd initrd
+find . | cpio -o -H newc | gzip -c > ../cdcontent/boot/initrd.gz
+cd ..
+

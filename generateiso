@@ -1,0 +1,3 @@
+#/bin/sh
+
+xorriso -as mkisofs -V 'GNOMEOS' -o gnomeos.iso -J -isohybrid-mbr extra/isohdpfx.bin -partition_offset 16 -joliet-long -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table cdcontent

@@ -1,0 +1,5 @@
+#/bin/sh
+
+mkdir initrd
+cd initrd
+zcat ../cdcontent/boot/initrd.gz | cpio -i

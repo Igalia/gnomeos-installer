@@ -1,0 +1,4 @@
+#/bin/sh
+
+dd if=gnomeos.iso of=$1 oflag=dsync bs=4M
+printf "\x9d\x2a\x44\x7b"|dd of=$1 bs=1 count=4 seek=440 oflag=dsync
